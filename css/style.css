@@ -15,11 +15,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -123,6 +118,9 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: center;
+
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .home {
@@ -147,10 +145,14 @@ h2 {
   margin-bottom: 40px;
 }
 
-.home-subtitle {
+h2 + b  {
+  display: block;
   width: 1030px;
   margin: 0 auto;
   margin-bottom: 45px;
+
+  font-weight: 400;
+  text-align: center;
 }
 
 .home-button {
@@ -159,4 +161,47 @@ h2 {
   margin: 0 auto;
 
   justify-content: space-between;
+}
+
+.description {
+  padding-top: 90px;
+}
+
+.description-title > span {
+  color: #262626;
+}
+
+.description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-text {
+  width: 570px;
+  margin-bottom: 40px;
+}
+
+.drop-down-menu details {
+  background-color: #f7f7f7;
+
+  font-family: 'Raleway', sans-serif;
+  color: #262626;
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: center;
+  
+  width: 569px;
+  min-height: 45px;
+
+  padding-left: 60px;
+  border: 1px solid #e7e7e7;
+}
+
+.drop-down-menu details:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.drop-down-menu summary::-webkit-details-marker {
+  display: none;
+  list-style: none;
 }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="425" height="369" viewBox="0 0 425 369">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #535353;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="active_img" data-name="active img" class="cls-1" d="M896.009,1346.01L792.015,1166,896.009,986H1103.99l103.99,180-103.99,180.01H896.009Z" transform="translate(-787.5 -981.5)"/>
+</svg>
