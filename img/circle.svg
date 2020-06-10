@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 19 19">
+  <defs>
+    <style>
+      .circle {
+        fill: none;
+        stroke: #505050;
+        stroke-width: 1px;
+      }
+      
+      summary:hover .circle {}
+    </style>
+  </defs>
+  <rect id="сircle" data-name="Прямоугольник 930" class="circle" x="0.5" y="0.5" width="18" height="18" rx="9" ry="9"/>
+</svg>

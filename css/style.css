@@ -165,6 +165,13 @@ h2 + b  {
 
 .description {
   padding-top: 90px;
+  margin-bottom: 100px;
+  color: #505050;
+}
+
+.description-subtitle {
+  font-weight: 700;
+  margin-bottom: 90px;
 }
 
 .description-title > span {
@@ -174,34 +181,213 @@ h2 + b  {
 .description-wrapper {
   display: flex;
   justify-content: space-between;
+
+  position: relative;
+
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.description-wrapper::before {
+  content: "";
+  width: 517px;
+  height: 1px;
+  background-color: #262626;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.description-wrapper::after {
+  content: "";
+  width: 21px;
+  height: 19px;
+
+  background-image: url('../img/Shape.svg');
+
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .description-text {
   width: 570px;
+  margin: 0;
   margin-bottom: 40px;
+  
 }
 
-.drop-down-menu details {
-  background-color: #f7f7f7;
-
-  font-family: 'Raleway', sans-serif;
-  color: #262626;
-  font-weight: 700;
-  font-size: 20px;
-  vertical-align: center;
-  
-  width: 569px;
-  min-height: 45px;
-
-  padding-left: 60px;
-  border: 1px solid #e7e7e7;
+.drop-down-menu summary:first-of-type {
+  list-style: none;
 }
 
 .drop-down-menu details:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.drop-down-menu summary::-webkit-details-marker {
-  display: none;
-  list-style: none;
+.drop-down-menu details {
+  width: 570px;
 }
+
+.drop-down-menu details:hover summary {
+  color: #ff0036;
+}
+
+.drop-down-menu summary {
+  border: 1px solid #e7e7e7;
+
+  background-color: #f7f7f7;
+
+  font-family: 'Raleaway', sans-serif;
+  color: #262626;
+  font-size: 20px;
+  user-select: none;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.drop-down-menu summary::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #505050;
+
+  position: absolute;
+  left: 24px;
+  top: 21px;
+}
+
+.drop-down-menu summary::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #505050;
+
+  position: absolute;
+  left: 28px;
+  top: 17px;
+
+  transform: rotate(0deg);
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function:ease;
+  transition-delay: 0ms;
+
+}
+
+.drop-down-menu details:hover summary::after,
+.drop-down-menu details:hover summary::before {
+  background-color: #ff0036;
+}
+
+.drop-down-menu details[open] summary::after {
+  /* display: none; */
+  
+  transform: rotate(90deg);
+
+}
+
+.drop-down-menu p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #505050;
+
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  border-top: 0;
+}
+
+.drop-down-menu  b {
+  margin-left: 58px;
+  padding: 11px 0;
+  padding-left: 30px;
+  border-left: 1px solid #e7e7e7;
+  font-weight: 500;
+
+  display: block;
+}
+
+.description-slider figure,
+.description-slider p {
+  margin: 0;
+}
+
+.image-icon {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+}
+
+.description-advantages {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  text-align: center;
+
+  position: relative;
+}
+
+.description-advantages-item {
+  position: relative;
+}
+
+.description-advantages-item h3 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
+  margin: 0;
+  margin-bottom: 20px;
+  color: #262626;
+
+}
+
+.description-advantages-item p {
+  margin: 0;
+}
+								
+.description-advantages-item:hover .shape-advantage {
+  fill: #ff0036;
+  stroke: none;
+}
+
+.shape-svg {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.description-heart,
+.description-check,
+.description-responsive,
+.description-clean {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);  
+  top: 27px;
+}
+
+.description-advantages-item:hover .description-heart-icon,
+.description-advantages-item:hover .description-check-icon,
+.description-advantages-item:hover .description-responsive-icon,
+.description-advantages-item:hover .description-clean-icon {
+  fill: #ffffff;
+  stroke: none;
+}
+
+
+
+
+
+
+
+
