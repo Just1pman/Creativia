@@ -384,6 +384,44 @@ h2 + b  {
   stroke: none;
 }
 
+.portfolio-wrapper {
+  padding: 100px 0;
+
+  background-color: #262626;
+}
+
+.portfolio-title {
+  color: #ffffff;
+
+  margin-bottom: 25px;
+}
+
+.portfolio-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+  padding: 0;
+  margin: 0 auto;
+
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.portfolio-filter a {
+  color: #a4a4a4;
+  font-weight: 700;
+}
+
+.portfolio-elements {
+  display: grid;
+  grid-template-columns: minmax(150px, 500px);
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 
 
 
